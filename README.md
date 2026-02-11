@@ -1,4 +1,4 @@
-# Healthcare RAG Agent 
+# Healthcare-RAG-System-with-Knowledge-Graph 
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![LangChain](https://img.shields.io/badge/LangChain-Latest-green.svg)](https://langchain.com/)
@@ -14,9 +14,8 @@ A Retrieval-Augmented Generation (RAG) agent designed for healthcare information
 - [Prerequisites](#-prerequisites)
 - [Quick Start](#-quick-start)
 - [Example Queries](#-example-queries)
-- [Database Design](#database-design)
 - [Technical Stack](#technical-stack)
-- [Acknowledgments](#acknowledgments)
+
 
 ## 🎯 Overview
 
@@ -54,7 +53,7 @@ graph LR
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/asanmateu/medgraph-ai
+git clone https://github.com/RAHUKKRRANJAN/Healthcare-RAG-System-with-Knowledge-Graph
 cd medgraph-ai
 ```
 
@@ -102,13 +101,6 @@ make build && make start
 make stop
 ```
 
-### Accessing the Services
-
-- **API Documentation**: `http://localhost:8000/docs`
-- **User Interface**: `http://localhost:8501`
-
-<img width="1614" alt="Screenshot 2024-03-27 at 19 44 54" src="https://github.com/asanmateu/healthcare-rag-chatbot/assets/62403518/ef6de300-5dbd-41a0-b89f-34fbe94473bf">
-
 ## 💬 Example Queries
 
 Try asking the agent:
@@ -117,27 +109,7 @@ Try asking the agent:
 - "What's the average wait time for emergency visits?"
 
 <a name="database-design"></a>
-## 🗄️ Database Design
 
-The application utilizes a graph database structure optimized for healthcare data relationships. Understanding this schema will help formulate effective queries.
-
-### Graph Schema Overview
-
-<img width="500" alt="Screenshot 2024-04-07 at 23 45 47" src="https://github.com/asanmateu/healthcare-rag-chatbot/assets/62403518/4884891c-b715-452b-af37-5fe69b9bad9e">
-
-### Node Properties
-
-The following node types and their properties are available for querying:
-
-<img width="500" alt="Screenshot 2024-04-07 at 23 44 17" src="https://github.com/asanmateu/healthcare-rag-chatbot/assets/62403518/56c976ac-6b27-409b-a4e3-81e1caba70d5">
-
-### Relationship Properties
-
-Relationships between nodes contain additional contextual information:
-
-<img width="500" alt="Screenshot 2024-04-07 at 23 44 57" src="https://github.com/asanmateu/healthcare-rag-chatbot/assets/62403518/f6d8ebe5-e808-4e8e-9a4c-5e15d47fa25e">
-
-<a name="technical-stack"></a>
 ## 🛠️ Technical Stack
 
 - **LangChain**: Orchestration framework for LLM applications
@@ -147,7 +119,5 @@ Relationships between nodes contain additional contextual information:
 - **Docker**: Containerization platform
 - **OpenAI GPT-3.5**: Language model for natural language understanding
 
-## Acknowledgments
 
-This project builds upon the excellent foundation provided by Real Python's LLM RAG Chatbot [tutorial](https://realpython.com/build-llm-rag-chatbot-with-langchain).
 
