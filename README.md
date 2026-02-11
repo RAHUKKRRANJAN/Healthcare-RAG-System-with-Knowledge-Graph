@@ -54,7 +54,7 @@ graph LR
 
 ```bash
 git clone https://github.com/RAHUKKRRANJAN/Healthcare-RAG-System-with-Knowledge-Graph
-cd medgraph-ai
+cd Healthcare-RAG-System-with-Knowledge-Graph
 ```
 
 ### 2. Environment Configuration
